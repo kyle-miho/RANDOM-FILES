@@ -1,0 +1,5 @@
+Find all Poshi macro calls that call exactly one macro
+<command name=.*?>\s*?<execute macro=.*?\">((\s*?)<var name=.*?/>)*?(\s*?)</execute>\s*?</command>
+
+Find all Poshi macro calls that call exactly one macro, but each variable inside is a reference
+<command name=.*?>\s*?<execute macro=.*?\">((\s*?)<var name=.*?value=\"\$\{.*?\}"\s/>)*?(\s*?)</execute>\s*?</command>
